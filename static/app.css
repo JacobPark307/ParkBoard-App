@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.container {
+    width: 100%;
+    border: 2px solid #000;
+    padding: 10px;
+    background-color: #fff;
+}
+button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #333;
+}
+button:active {
+    background-color: #666;
+}
+.header, .notes, .issues, .system-section {
+    border-bottom: 2px solid #000;
+    padding: 10px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header div {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+.issues, .system-section, .notes {
+    display: flex;
+}
+.issues div, .notes div {
+    flex: 1;
+    padding: 10px;
+}
+.Problems {
+    border-right: 2px solid #000;
+
+}
+.issues div:last-child, .notes div:last-child {
+    border-right: none;
+}
+.system-section {
+    flex-direction: column;
+}
+.system {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+.system:last-child {
+    border-bottom: none;
+}
+.system-1 { border-left: 5px solid red; }
+.system-2 { border-left: 5px solid yellow; }
+.system-3 { border-left: 5px solid green; }
+.system-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Editable text styling */
+.editable {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+.editable:focus {
+    outline: 2px solid #00f;
+    background-color: #f0f0f0;
+}
